@@ -1,0 +1,29 @@
+﻿@model RegistrationMVVMApp.Models.WishVM
+
+<h2>
+    Using Data Annotation
+</h2>
+@using (Html.BeginForm(FormMethod.Post))
+{
+    @Html.ValidationSummary(true, "", new { @style = "color:red" })
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor((m) => m.Name)
+
+
+    <input type="submit" value="Wish" />
+    <br />
+    @Html.ValidationMessageFor(model => model.Name, "", new { @style = "color:red" })
+
+    <p style="color:blue">
+        @Model.WishMessage
+    </p>
+    @Html.DropDownList("Color", new List<SelectListItem>
+{
+    new SelectListItem {Text="Red" , Value="#f23a56"},
+    new SelectListItem {Text="Blue" , Value="#458af7"},
+    new SelectListItem {Text="Green" , Value="#51cc1d"},
+
+}, "--select Color--")
+}
+
+

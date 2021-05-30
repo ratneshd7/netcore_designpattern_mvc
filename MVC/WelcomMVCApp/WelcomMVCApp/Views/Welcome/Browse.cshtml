@@ -1,0 +1,16 @@
+﻿@{ 
+    var msgFromViewData = ViewData["msgFromViewData"] as String;
+    var msgTempdata = TempData["msgTempdata"] as String;
+}
+<h1>This is Browse view of Welcom Controller</h1>
+@for (int j=0;j<5;j++){
+    <h2>Ratnesh @j</h2>
+}
+    
+<h2>Browse view</h2>
+<h1> @Session["Session_Start"]</h1>
+
+<h2>@ViewBag.msgFromController</h2>
+<h2>@msgFromViewData</h2>
+<h2>@msgTempdata</h2>
+

@@ -1,0 +1,44 @@
+﻿namespace FactoryDesignPattern
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Generally we will get the Card Type from UI.
+            //Here we are hardcoded the card type
+            string cardType = "MoneyBack";
+            CreditCard cardDetails = null;
+            //Based of the CreditCard Type we are creating the
+            //appropriate type instance using if else condition
+            if (cardType == "MoneyBack")
+            {
+                cardDetails = new MoneyBack();
+            }
+            else if (cardType == "Titanium")
+            {
+                cardDetails = new Titanium();
+            }
+            else if (cardType == "Platinum")
+            {
+                cardDetails = new Platinum();
+            }
+            if (cardDetails != null)
+            {
+                Console.WriteLine("CardType : " + cardDetails.GetCardType());
+                Console.WriteLine("CreditLimit : " + cardDetails.GetCreditLimit());
+                Console.WriteLine("AnnualCharge :" + cardDetails.GetAnnualCharge());
+            }
+            else
+            {
+                Console.Write("Invalid Card Type");
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
+What is the Problem of the above code implementation?
+The above code implementation introduces the following problems
+
+First, the tight coupling between the client class (Program) and Product Class (MoneyBack, Titanium, and Platinum).
+Secondly, if we add a new Credit Card, then also we need to modify the Main method by adding an extra if-else condition which not only overheads in the development but also in the testing process

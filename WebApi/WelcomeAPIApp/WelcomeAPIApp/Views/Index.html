@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <button type="button" class="btn btn-secondary" id="getbtn">Get</button><br><br>
+    <button type="button" class="btn btn-success" id="putbtn">Put</button><br><br>
+    <button type="button" class="btn btn-info" id="postbtn">Post</button><br><br>
+    <button type="button" class="btn btn-warning" id="deletebtn">Delete</button><br>
+    <p id="para"></p>
+
+</body>
+
+</html>
+<script>
+    $(document).ready(function () {
+        $("#getbtn").click(function () {
+            $.ajax({
+                url: 'http://localhost:65357/api/Welcome',
+                type: 'GET',
+                success: function (result) {
+                    $("#para").html(result);
+                }
+            })
+        });
+
+        $("#putbtn").click(function () {
+            $.ajax({
+                url: 'http://localhost:65357/api/Welcome',
+                type: 'PUT',
+                success: function (result) {
+                    $("#para").html(result);
+                }
+            })
+        });
+        $("#postbtn").click(function () {
+            $.post({
+                url: 'http://localhost:65357/api/Welcome',
+
+                success: function (result) {
+                    $("#para").html(result);
+                },
+                error:function(result){
+                    console.log(result.statusText);
+
+                }
+            })
+        });
+        $("#deletebtn").click(function () {
+            $.ajax({
+                url: 'http://localhost:65357/api/Welcome',
+                type: 'DELETE',
+                success: function (result) {
+                    $("#para").html(result);
+                }
+            })
+        });
+    })
+</script>

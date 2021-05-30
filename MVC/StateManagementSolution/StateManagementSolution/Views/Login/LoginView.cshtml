@@ -1,0 +1,12 @@
+﻿@model StateManagementSolution.ViewModel.UserVM
+@using (Html.BeginForm("Index", "Login", FormMethod.Post))
+{
+    @Html.ValidationMessageFor(model => model.Username, "", new { style = "color:red" })
+    <p> UserName: @Html.TextBoxFor(m => m.Username)</p>
+        <br />
+    @Html.ValidationMessageFor(model => model.Password, "", new { style = "color:red" })
+    <p>Password:@Html.TextBoxFor(m=>m.Password)</p>
+
+    <input type="submit" value="login"/>
+}
+

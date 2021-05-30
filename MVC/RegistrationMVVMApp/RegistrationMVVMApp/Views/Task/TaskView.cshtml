@@ -1,0 +1,28 @@
+﻿@model RegistrationMVVMApp.ViewModel.TaskVM
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+    @Html.ValidationSummary(true, "", new { @style = "color:red" })
+    @Html.LabelFor(model => model.Task)
+    @Html.TextBoxFor((m) => m.Task)
+
+
+    <input type="submit" value="+ Add" />
+    <br />
+    @Html.ValidationMessageFor(model => model.Task, "", new { @style = "color:red" })
+
+    if (Model.TaskList != null)
+    {
+        foreach (var item in Model.TaskList)
+        {
+            <p style="color:blue">
+                @item
+            </p>
+        }
+    }
+
+}
+
+
+
+

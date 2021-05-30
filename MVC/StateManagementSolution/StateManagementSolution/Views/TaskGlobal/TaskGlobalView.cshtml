@@ -1,0 +1,20 @@
+﻿@model StateManagementSolution.Models.Task
+
+@using (Html.BeginForm(FormMethod.Post)) {
+    @Html.Label("Enter Task:","Enter-Task")
+    @Html.EditorFor(m=>m.InputTaskName)
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+    <input type="submit" value="+" />
+   <h2>Task list</h2>
+    if (@Model.Tasklists !=null)
+    {
+        for (int i= Model.Tasklists.Count-1; i>=0;i--)
+        {
+           <p>
+               @Model.Tasklists[i].TaskName
+           </p>
+       }
+   }
+}
+
+

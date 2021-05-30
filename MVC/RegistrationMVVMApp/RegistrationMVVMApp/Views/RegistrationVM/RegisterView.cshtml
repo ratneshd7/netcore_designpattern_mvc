@@ -1,0 +1,21 @@
+﻿
+@model RegistrationMVVMApp.ViewModel.RegisterVM
+@using System.Web.Mvc.Html;
+
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+    <p>
+        UserName Is: @Html.TextBoxFor((m) => m.Name)
+    </p>
+    <p>
+        Email Is: @Html.TextBoxFor((m) => m.Email)
+    </p>
+    <p>
+        MobileNo Is: @Html.TextBoxFor((m) => m.MobileNo)
+    </p>
+    <p>@Html.Label(Model.Message,new { @style= "color:"+Model.MessageColor})</p>
+    <input type="submit" />
+}
+
+

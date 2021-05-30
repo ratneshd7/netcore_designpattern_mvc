@@ -1,0 +1,24 @@
+﻿@model RegistrationMVVMApp.ViewModel.ColorPickerVM
+<body style="background-color:@Model.ColorCode">
+    @using (Html.BeginForm(FormMethod.Post))
+    {
+
+        @Html.DropDownListFor(model=>model.SelectedColor, new SelectList(Model.ColorLists, "Value","Text"), "Select color", new { @id = "color" })
+        
+        <p>@Model.ColorCode</p>
+        <p>@Model.ColorName</p>
+        <input type="submit" value="OK" />
+    }
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#color").change(function () {
+            //$("#ColorText").val($("select option:selected").first().text());
+            
+            $(this).parents('form').submit();
+            //$("body").css("background-color", $("select option:selected").first().val());
+        });
+    });
+</script>
+

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayListCollectionsApp", "ArrayListCollectionsApp\ArrayListCollectionsApp.csproj", "{FC0EB41F-A5AC-4386-B811-E6D25B7ED9E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListGenericsApp", "ListGenericsApp\ListGenericsApp.csproj", "{AFDE180A-21E1-4C0C-BAD7-CC3EF1166AA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryApp", "DictionaryApp\DictionaryApp.csproj", "{2B777873-BCBD-4E1F-9B30-965F7C35D776}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC0EB41F-A5AC-4386-B811-E6D25B7ED9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC0EB41F-A5AC-4386-B811-E6D25B7ED9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC0EB41F-A5AC-4386-B811-E6D25B7ED9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC0EB41F-A5AC-4386-B811-E6D25B7ED9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDE180A-21E1-4C0C-BAD7-CC3EF1166AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDE180A-21E1-4C0C-BAD7-CC3EF1166AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDE180A-21E1-4C0C-BAD7-CC3EF1166AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDE180A-21E1-4C0C-BAD7-CC3EF1166AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B777873-BCBD-4E1F-9B30-965F7C35D776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B777873-BCBD-4E1F-9B30-965F7C35D776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B777873-BCBD-4E1F-9B30-965F7C35D776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B777873-BCBD-4E1F-9B30-965F7C35D776}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

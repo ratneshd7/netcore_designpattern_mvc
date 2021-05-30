@@ -1,0 +1,12 @@
+﻿@model StateManagementSolution.ViewModel.CounterVM
+
+
+@using (Html.BeginForm(FormMethod.Post)) {
+   <p> Old: @Model.Old </p>
+   <p> New: @Model.New </p>
+   <p> SessionID: @Model.SessionID</p>
+    <input type="submit" value="OK"/>
+}
+
+
+

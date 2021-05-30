@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinQApp", "LinQApp\LinQApp.csproj", "{D6D7545B-D2C0-40B7-A0D7-1ABA16BA17EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinQWithObjectApp", "LinQWithObjectApp\LinQWithObjectApp.csproj", "{37757FE3-F7C4-4272-8033-6BF38C6D35FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoriesWithLinQApp", "DirectoriesWithLinQApp\DirectoriesWithLinQApp.csproj", "{D435D28F-6F2F-42B7-BF0A-2774DF7A17F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6D7545B-D2C0-40B7-A0D7-1ABA16BA17EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D7545B-D2C0-40B7-A0D7-1ABA16BA17EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D7545B-D2C0-40B7-A0D7-1ABA16BA17EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D7545B-D2C0-40B7-A0D7-1ABA16BA17EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37757FE3-F7C4-4272-8033-6BF38C6D35FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37757FE3-F7C4-4272-8033-6BF38C6D35FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37757FE3-F7C4-4272-8033-6BF38C6D35FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37757FE3-F7C4-4272-8033-6BF38C6D35FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D435D28F-6F2F-42B7-BF0A-2774DF7A17F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D435D28F-6F2F-42B7-BF0A-2774DF7A17F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D435D28F-6F2F-42B7-BF0A-2774DF7A17F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D435D28F-6F2F-42B7-BF0A-2774DF7A17F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
