@@ -8,7 +8,7 @@ namespace IteratorDesignPattern
 {
     interface IAbstractIterator
     {
-       Employee First();
+        Employee First();
         Employee Next();
         bool IsCompleted { get; }
     }

@@ -28,4 +28,4 @@ namespace PrototypeDesignPattern
             return (Employee)this.MemberwiseClone();
         }
     }
-    }
+}

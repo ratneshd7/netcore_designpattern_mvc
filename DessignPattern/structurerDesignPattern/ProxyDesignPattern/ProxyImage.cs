@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProxyDesignPattern
 {
-    class ProxyImage :IImage
+    class ProxyImage : IImage
     {
         private RealImage realImage;
         private String fileName;
@@ -15,7 +15,7 @@ namespace ProxyDesignPattern
         {
             this.fileName = fileName;
         }
-                public void Display()
+        public void Display()
         {
             if (realImage == null)
             {
