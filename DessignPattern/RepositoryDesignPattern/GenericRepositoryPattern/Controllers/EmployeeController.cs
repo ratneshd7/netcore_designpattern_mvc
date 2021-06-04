@@ -5,16 +5,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using UnitOfWorkRepositoryPattern.UnitOfWorks;
 
 namespace GenericRepositoryPattern.Controllers
 {
     public class EmployeeController : Controller
     {
-        private IGenericRepository<Employee> repository = null;
+        private readonly IGenericRepository<Employee> repository;
         public EmployeeController(EmployeeDBContext context)
         {
-            UnitOfWork unitOfWork = new UnitOfWork(context);
+
             GenericRepository<Employee> e = new GenericRepository<Employee>(context);
 
             this.repository = e;
